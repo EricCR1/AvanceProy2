@@ -45,7 +45,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.label4 = new System.Windows.Forms.Label();
             this.valorBuscado = new System.Windows.Forms.Button();
             this.txtValorBuscar = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGrafica = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -237,15 +237,15 @@ namespace EDDemo.Estructuras_No_Lineales
             this.txtValorBuscar.Size = new System.Drawing.Size(79, 38);
             this.txtValorBuscar.TabIndex = 14;
             // 
-            // button1
+            // btnGrafica
             // 
-            this.button1.Location = new System.Drawing.Point(737, 385);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 47);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Graficar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            this.btnGrafica.Location = new System.Drawing.Point(737, 385);
+            this.btnGrafica.Name = "btnGrafica";
+            this.btnGrafica.Size = new System.Drawing.Size(85, 47);
+            this.btnGrafica.TabIndex = 15;
+            this.btnGrafica.Text = "Graficar";
+            this.btnGrafica.UseVisualStyleBackColor = true;
+            this.btnGrafica.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // frmArboles
             // 
@@ -253,7 +253,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(130)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(938, 507);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGrafica);
             this.Controls.Add(this.txtValorBuscar);
             this.Controls.Add(this.valorBuscado);
             this.Controls.Add(this.label4);
@@ -298,6 +298,6 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button valorBuscado;
         private System.Windows.Forms.TextBox txtValorBuscar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGrafica;
     }
 }

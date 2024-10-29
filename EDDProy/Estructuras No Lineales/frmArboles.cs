@@ -169,7 +169,30 @@ namespace EDDemo.Estructuras_No_Lineales
 
         private void button1_Click_2(object sender, EventArgs e)
         {
+            String graphVizString;
 
+            miRaiz = miArbol.RegresaRaiz();
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El arbol esta vacio");
+                return;
+            }
+
+            StringBuilder b = new StringBuilder();
+            b.Append("digraph G { node [shape=\"circle\"]; " + Environment.NewLine);
+            b.Append(miArbol.ToDot(miRaiz));
+            b.Append("}");
+            graphVizString = b.ToString();
+
+            //graphVizString = @" digraph g{ label=""Graph""; labelloc=top;labeljust=left;}";
+            //graphVizString = @"digraph Arbol{Raiz->60; 60->40. 60->90; 40->34; 40->50;}";
+            Bitmap bm = FileDotEngine.Run(graphVizString);
+
+
+            frmGrafica graf = new frmGrafica();
+            graf.ActualizaGrafica(bm);
+            graf.MdiParent = this.MdiParent;
+            graf.Show();
         }
     }
 }
