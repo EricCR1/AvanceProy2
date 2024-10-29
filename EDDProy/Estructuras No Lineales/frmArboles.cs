@@ -156,7 +156,7 @@ namespace EDDemo.Estructuras_No_Lineales
                 
 
                 if (miArbol.Buscar(valor, miArbol.RegresaRaiz()))
-                    MessageBox.Show("El valor se encontró en el árbol.");
+                    MessageBox.Show("El"+ valor + "se encontró en el árbol.");
                 else
                     MessageBox.Show("El valor no se encontró en el árbol.");
             }

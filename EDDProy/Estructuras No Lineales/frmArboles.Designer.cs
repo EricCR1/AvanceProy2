@@ -208,11 +208,11 @@ namespace EDDemo.Estructuras_No_Lineales
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(582, 360);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 22);
+            this.label4.Size = new System.Drawing.Size(71, 22);
             this.label4.TabIndex = 12;
             this.label4.Text = "Nodos";
             // 
@@ -239,12 +239,15 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnGrafica
             // 
-            this.btnGrafica.Location = new System.Drawing.Point(737, 385);
+            this.btnGrafica.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnGrafica.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrafica.ForeColor = System.Drawing.Color.White;
+            this.btnGrafica.Location = new System.Drawing.Point(733, 378);
             this.btnGrafica.Name = "btnGrafica";
-            this.btnGrafica.Size = new System.Drawing.Size(85, 47);
+            this.btnGrafica.Size = new System.Drawing.Size(98, 54);
             this.btnGrafica.TabIndex = 15;
             this.btnGrafica.Text = "Graficar";
-            this.btnGrafica.UseVisualStyleBackColor = true;
+            this.btnGrafica.UseVisualStyleBackColor = false;
             this.btnGrafica.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // frmArboles
