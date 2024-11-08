@@ -194,5 +194,127 @@ namespace EDDemo.Estructuras_No_Lineales
             graf.MdiParent = this.MdiParent;
             graf.Show();
         }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            // Obtenemos el nodo raíz del árbol
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            // Llamamos al método para podar el árbol
+            miArbol.PodarArbol(ref miRaiz);
+            miRaiz = null;
+
+            // Actualizamos la visualización del árbol usando la función de mostrar
+            miArbol.strArbol = ""; // Limpiamos la cadena del árbol
+            miArbol.MuestraArbolAcostado(1, miRaiz); // o usa Muestra(1, miRaiz) si prefieres esa función
+            txtArbol.Text = miArbol.strArbol; // Muestra el árbol en la caja de texto
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNodos_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_4(object sender, EventArgs e)
+        {
+            int valorAEliminar = int.Parse(txtDatoEliminar.Text);
+
+            // Llama a EliminarPredecesor con el nodo raíz
+            miArbol.EliminarPredecesor(valorAEliminar, ref miRaiz);
+
+            // Reasigna la raíz en caso de que se haya eliminado
+            miRaiz = miArbol.RegresaRaiz();
+
+            // Actualiza la visualización del árbol
+            miArbol.strArbol = "";
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_5(object sender, EventArgs e)
+        {
+            // Obtenemos el nodo raíz del árbol
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            // Calculamos la altura del árbol desde la raíz
+            int altura = miArbol.Altura(miRaiz);
+            MessageBox.Show("La altura del árbol es: " + altura);
+        }
+
+        public int ContarHojas(NodoBinario nodo)
+        {
+            // Si el nodo es null, no hay hojas en esta rama
+            if (nodo == null)
+                return 0;
+
+            // Si el nodo es una hoja (no tiene hijos izquierdo y derecho)
+            if (nodo.Izq == null && nodo.Der == null)
+                return 1;
+
+            // Sumar las hojas en los subárboles izquierdo y derecho
+            return ContarHojas(nodo.Izq) + ContarHojas(nodo.Der);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Obtenemos la raíz del árbol
+            miRaiz = miArbol.RegresaRaiz();
+
+            // Verifica si el árbol está vacío
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            // Llama al método para contar las hojas y muestra el resultado
+            int numHojas = miArbol.ContarHojas(miRaiz);
+            MessageBox.Show("El número de hojas en el árbol es: " + numHojas);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Obtenemos la raíz del árbol
+            miRaiz = miArbol.RegresaRaiz();
+
+            // Verifica si el árbol está vacío
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            // Llama al método para contar los nodos y muestra el resultado
+            int numNodos = miArbol.ContarNodos(miRaiz);
+            MessageBox.Show("El número de nodos en el árbol es: " + numNodos);
+        }
+
+        private void txtArbol_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
