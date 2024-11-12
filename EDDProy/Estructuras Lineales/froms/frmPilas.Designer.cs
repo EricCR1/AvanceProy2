@@ -108,18 +108,20 @@ namespace EDDemo
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 30;
             this.listBox1.Location = new System.Drawing.Point(497, -4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(69, 511);
+            this.listBox1.Size = new System.Drawing.Size(69, 484);
             this.listBox1.TabIndex = 6;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.textBox1.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(314, 350);
+            this.textBox1.Font = new System.Drawing.Font("HP Simplified", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(314, 416);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(167, 53);
@@ -128,8 +130,8 @@ namespace EDDemo
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.textBox2.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(314, 413);
+            this.textBox2.Font = new System.Drawing.Font("HP Simplified", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(314, 349);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(167, 53);

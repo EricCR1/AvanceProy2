@@ -78,6 +78,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Vaciar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -104,12 +105,13 @@
             this.btnPush.TabIndex = 7;
             this.btnPush.Text = "Queue";
             this.btnPush.UseVisualStyleBackColor = false;
+            this.btnPush.Click += new System.EventHandler(this.btnPush_Click);
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.CadetBlue;
             this.textBox1.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(301, 339);
+            this.textBox1.Location = new System.Drawing.Point(301, 398);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(167, 53);
@@ -119,7 +121,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.CadetBlue;
             this.textBox2.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(300, 398);
+            this.textBox2.Location = new System.Drawing.Point(301, 339);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(167, 53);

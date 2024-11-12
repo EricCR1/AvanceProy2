@@ -152,7 +152,7 @@ namespace EDDemo.Estructuras_No_Lineales
         private void button1_Click_1(object sender, EventArgs e)
         {
             {
-                int valor = int.Parse(txtValorBuscar.Text);
+                int valor = int.Parse(textBox1.Text);
                 
 
                 if (miArbol.Buscar(valor, miArbol.RegresaRaiz()))
@@ -315,6 +315,78 @@ namespace EDDemo.Estructuras_No_Lineales
         private void txtArbol_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLleno_Click(object sender, EventArgs e)
+        {
+            // Obtenemos el nodo raíz del árbol
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            // Verificamos si el árbol es lleno
+            if (miArbol.EsLleno(miRaiz))
+                MessageBox.Show("El árbol es lleno.");
+            else
+                MessageBox.Show("El árbol no es lleno.");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int valorAEliminar = int.Parse(textBox1.Text);
+
+            // Llama a EliminarSucesor con el nodo raíz
+            miArbol.EliminarSucesor(valorAEliminar, ref miRaiz);
+
+            // Reasigna la raíz en caso de que se haya eliminado
+            miRaiz = miArbol.RegresaRaiz();
+
+            // Actualiza la visualización del árbol
+            miArbol.strArbol = "";
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+        }
+
+        private void txtDatoEliminar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            {
+                if (miRaiz == null)
+                {
+                    MessageBox.Show("El árbol está vacío.");
+                    return;
+                }
+
+                // Llamamos al método de recorrido por niveles con la cola personalizada
+                miArbol.RecorridoPorNivelesPersonalizado(miRaiz);
+
+                // Mostramos el resultado
+                MessageBox.Show("Recorrido por niveles: " + miArbol.strRecorrido);
+            }
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío.");
+                return;
+            }
+
+            bool esCompleto = miArbol.EsArbolCompleto(miRaiz);
+
+            if (esCompleto)
+                MessageBox.Show("El árbol es completo.");
+            else
+                MessageBox.Show("El árbol no es completo.");
         }
     }
 }

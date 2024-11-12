@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Estructuras_Lineales.Clases;
 
 namespace EDDemo.Estructuras_Lineales.froms
 {
     public partial class frmFila : Form
     {
+        private Cola cola;
         public frmFila()
         {
             InitializeComponent();
+            cola = new Cola(listBox1);
         }
 
         private void frmFila_Load(object sender, EventArgs e)
@@ -24,17 +27,39 @@ namespace EDDemo.Estructuras_Lineales.froms
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            cola.Imprimir();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            int posicion;
+            // Validar que el texto ingresado sea un número
+            if (int.TryParse(textBox2.Text, out posicion))
+            {
+                cola.Recorrer(posicion);  // Añadir a la pila
+            }
+            textBox1.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            cola.DeQueue();
+        }
 
+        private void btnPush_Click(object sender, EventArgs e)
+        {
+            int DATO;
+            // Validar que el texto ingresado sea un número
+            if (int.TryParse(textBox1.Text, out DATO))
+            {
+                cola.Queue(DATO);  // Añadir a la pila
+            }
+            textBox1.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            cola.VaciarCola();
         }
     }
 }

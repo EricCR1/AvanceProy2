@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Estructuras Lineales\Clases\Cola.cs" />
     <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
     <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
     <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
@@ -80,6 +81,7 @@
       <DependentUpon>frmListasDobles.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
+    <Compile Include="Estructuras No Lineales\Clases\ColaPersonalizada.cs" />
     <Compile Include="Estructuras No Lineales\frmArboles.cs">
       <SubType>Form</SubType>
     </Compile>

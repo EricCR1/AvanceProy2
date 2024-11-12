@@ -14,9 +14,12 @@ namespace EDDemo
 {
     public partial class frmInicio : Form
     {
+        private Pilas pila;
         public frmInicio()
         {
             InitializeComponent();
+            ListBox tempListBox = new ListBox(); // Crear un ListBox temporal
+            pila = new Pilas(tempListBox);
         }
 
         private void frmInicio_Load(object sender, EventArgs e)

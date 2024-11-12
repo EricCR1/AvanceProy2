@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Estructuras_Lineales.Clases;
+using EDDemo.Estructuras_No_Lineales.Clases;
 
 namespace EDDemo.Estructuras_No_Lineales
 {
@@ -11,7 +13,8 @@ namespace EDDemo.Estructuras_No_Lineales
     {
         NodoBinario Raiz;
         public String strArbol;
-        
+
+
         public String strRecorrido;
 
         public ArbolBusqueda()
@@ -34,7 +37,7 @@ namespace EDDemo.Estructuras_No_Lineales
         }
 
         public void InsertaNodo(int Dato, ref NodoBinario Nodo)
-        {            
+        {
             if (Nodo == null)
             {
                 Nodo = new NodoBinario(Dato);
@@ -46,7 +49,7 @@ namespace EDDemo.Estructuras_No_Lineales
             else if (Dato < Nodo.Dato)
                 InsertaNodo(Dato, ref Nodo.Izq);
             else if (Dato > Nodo.Dato)
-                InsertaNodo(Dato, ref Nodo.Der);          
+                InsertaNodo(Dato, ref Nodo.Der);
         }
 
         public void MuestraArbolAcostado(int nivel, NodoBinario nodo)
@@ -79,17 +82,17 @@ namespace EDDemo.Estructuras_No_Lineales
             return b.ToString();
         }
 
-        public void Muestra(int nivel, NodoBinario nodo )
+        public void Muestra(int nivel, NodoBinario nodo)
         {
             if (nodo == null)
                 return;
             Muestra(nivel + 1, nodo.Der);
-            for(int i=0; i<nivel; i++)
+            for (int i = 0; i < nivel; i++)
             {
                 strArbol = strArbol + "     ";
             }
             strArbol = strArbol + nodo.Dato.ToString() + "\r\n";
-            Muestra(nivel + 1, nodo.Izq); 
+            Muestra(nivel + 1, nodo.Izq);
         }
 
         //ALGORITMO DEL METODO PREORDEN
@@ -141,9 +144,9 @@ namespace EDDemo.Estructuras_No_Lineales
             if (valor < nodo.Dato)
                 return Buscar(valor, nodo.Izq);
 
-            else 
+            else
                 return Buscar(valor, nodo.Der);
-        
+
         }
 
         public void PodarArbol(ref NodoBinario nodo)
@@ -264,6 +267,117 @@ namespace EDDemo.Estructuras_No_Lineales
             return 1 + ContarNodos(nodo.Izq) + ContarNodos(nodo.Der);
         }
 
+        public bool EsLleno(NodoBinario nodo)
+        {
+            // Si el nodo es null, se considera que el árbol es lleno
+            if (nodo == null)
+                return true;
+
+            // Si el nodo es una hoja (no tiene hijos), también se considera lleno
+            if (nodo.Izq == null && nodo.Der == null)
+                return true;
+
+            // Si el nodo tiene ambos hijos, revisamos que ambos subárboles también sean llenos
+            if (nodo.Izq != null && nodo.Der != null)
+                return EsLleno(nodo.Izq) && EsLleno(nodo.Der);
+
+            // En cualquier otro caso, el árbol no es lleno
+            return false;
+        }
+
+        public void EliminarSucesor(int x, ref NodoBinario nodo)
+        {
+            if (nodo == null)
+                return;
+
+            if (x < nodo.Dato)
+                EliminarSucesor(x, ref nodo.Izq);
+            else if (x > nodo.Dato)
+                EliminarSucesor(x, ref nodo.Der);
+            else if (nodo.Izq != null && nodo.Der != null)
+            {
+                // Caso en que el nodo tiene dos hijos
+                NodoBinario menor = BuscaMenor(nodo.Der);
+                nodo.Dato = menor.Dato;
+                EliminarSucesor(menor.Dato, ref nodo.Der);
+            }
+            else
+            {
+                // Caso en que el nodo tiene un solo hijo
+                NodoBinario temp = nodo;
+                nodo = (nodo.Izq != null) ? nodo.Izq : nodo.Der;
+                temp = null;
+            }
+        }
+
+        public void RecorridoPorNivelesPersonalizado(NodoBinario nodo)
+        {
+            if (nodo == null)
+                return;
+
+            ColaPersonalizada cola = new ColaPersonalizada();
+            cola.Enqueue(nodo);
+
+            strRecorrido = ""; // Limpiamos la cadena antes de usarla
+
+            while (!cola.IsEmpty())
+            {
+                NodoBinario actual = cola.Dequeue();
+                strRecorrido += actual.Dato + " - ";
+
+                if (actual.Izq != null)
+                    cola.Enqueue(actual.Izq);
+
+                if (actual.Der != null)
+                    cola.Enqueue(actual.Der);
+            }
+        }
+
+        public bool EsArbolCompleto(NodoBinario nodo)
+        {
+            if (nodo == null)
+                return true; // Un árbol vacío es completo
+
+            ColaPersonalizada colaAuxiliar = new ColaPersonalizada();
+            colaAuxiliar.Enqueue(nodo);
+
+            bool nodoLleno = false; // Indica si hemos encontrado un nodo que no tiene hijos completos
+
+            while (!colaAuxiliar.IsEmpty())
+            {
+                NodoBinario nodoAuxiliar = colaAuxiliar.Dequeue();
+
+                // Revisamos el hijo izquierdo
+                if (nodoAuxiliar.Izq != null)
+                {
+                    if (nodoLleno)
+                        return false; // Si ya encontramos un nodo incompleto, no puede haber más nodos con hijos
+
+                    colaAuxiliar.Enqueue(nodoAuxiliar.Izq);
+                }
+                else
+                {
+                    nodoLleno = true; // Marcamos que encontramos un nodo sin hijo izquierdo
+                }
+
+                // Revisamos el hijo derecho
+                if (nodoAuxiliar.Der != null)
+                {
+                    if (nodoLleno)
+                        return false; // Si ya encontramos un nodo incompleto, no puede haber más nodos con hijos
+
+                    colaAuxiliar.Enqueue(nodoAuxiliar.Der);
+                }
+                else
+                {
+                    nodoLleno = true; // Marcamos que encontramos un nodo sin hijo derecho
+                }
+            }
+
+            return true; // Si procesamos todos los nodos sin problemas, el árbol es completo
+        }
+
 
     }
 }
+

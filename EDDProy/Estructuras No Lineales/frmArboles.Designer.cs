@@ -55,6 +55,12 @@ namespace EDDemo.Estructuras_No_Lineales
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnLleno = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnNiveles = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -238,7 +244,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.valorBuscado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.valorBuscado.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valorBuscado.ForeColor = System.Drawing.Color.White;
-            this.valorBuscado.Location = new System.Drawing.Point(402, 189);
+            this.valorBuscado.Location = new System.Drawing.Point(402, 253);
             this.valorBuscado.Name = "valorBuscado";
             this.valorBuscado.Size = new System.Drawing.Size(95, 35);
             this.valorBuscado.TabIndex = 13;
@@ -249,7 +255,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // txtValorBuscar
             // 
             this.txtValorBuscar.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorBuscar.Location = new System.Drawing.Point(517, 186);
+            this.txtValorBuscar.Location = new System.Drawing.Point(512, 250);
             this.txtValorBuscar.Multiline = true;
             this.txtValorBuscar.Name = "txtValorBuscar";
             this.txtValorBuscar.Size = new System.Drawing.Size(79, 38);
@@ -261,7 +267,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnGrafica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGrafica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrafica.ForeColor = System.Drawing.Color.White;
-            this.btnGrafica.Location = new System.Drawing.Point(516, 427);
+            this.btnGrafica.Location = new System.Drawing.Point(755, 427);
             this.btnGrafica.Name = "btnGrafica";
             this.btnGrafica.Size = new System.Drawing.Size(75, 54);
             this.btnGrafica.TabIndex = 15;
@@ -328,13 +334,14 @@ namespace EDDemo.Estructuras_No_Lineales
             this.txtDatoEliminar.Name = "txtDatoEliminar";
             this.txtDatoEliminar.Size = new System.Drawing.Size(84, 38);
             this.txtDatoEliminar.TabIndex = 20;
+            this.txtDatoEliminar.TextChanged += new System.EventHandler(this.txtDatoEliminar_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(495, 139);
+            this.label7.Location = new System.Drawing.Point(463, 138);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 15);
             this.label7.TabIndex = 21;
@@ -346,7 +353,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(207, 424);
+            this.button1.Location = new System.Drawing.Point(571, 427);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 57);
             this.button1.TabIndex = 22;
@@ -359,7 +366,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(422, 424);
+            this.button2.Location = new System.Drawing.Point(379, 427);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 57);
             this.button2.TabIndex = 23;
@@ -372,7 +379,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(321, 424);
+            this.button3.Location = new System.Drawing.Point(475, 426);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 57);
             this.button3.TabIndex = 24;
@@ -380,12 +387,90 @@ namespace EDDemo.Estructuras_No_Lineales
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // btnLleno
+            // 
+            this.btnLleno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnLleno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLleno.ForeColor = System.Drawing.Color.White;
+            this.btnLleno.Location = new System.Drawing.Point(175, 428);
+            this.btnLleno.Name = "btnLleno";
+            this.btnLleno.Size = new System.Drawing.Size(75, 54);
+            this.btnLleno.TabIndex = 25;
+            this.btnLleno.Text = "¿Arbol lleno?";
+            this.btnLleno.UseVisualStyleBackColor = false;
+            this.btnLleno.Click += new System.EventHandler(this.btnLleno_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(402, 168);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(95, 39);
+            this.button4.TabIndex = 26;
+            this.button4.Text = "Borrar Nodo";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(507, 168);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(84, 39);
+            this.textBox1.TabIndex = 27;
+            // 
+            // btnNiveles
+            // 
+            this.btnNiveles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnNiveles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNiveles.ForeColor = System.Drawing.Color.White;
+            this.btnNiveles.Location = new System.Drawing.Point(662, 427);
+            this.btnNiveles.Name = "btnNiveles";
+            this.btnNiveles.Size = new System.Drawing.Size(75, 54);
+            this.btnNiveles.TabIndex = 28;
+            this.btnNiveles.Text = "Recorrer Niveles";
+            this.btnNiveles.UseVisualStyleBackColor = false;
+            this.btnNiveles.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(277, 429);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 52);
+            this.button5.TabIndex = 29;
+            this.button5.Text = "¿Arbol Completo?";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(463, 210);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(110, 15);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "Elimina el Sucesor";
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(962, 481);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnNiveles);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnLleno);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -450,5 +535,11 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLleno;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnNiveles;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label8;
     }
 }
