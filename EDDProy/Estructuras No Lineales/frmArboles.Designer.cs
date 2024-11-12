@@ -267,7 +267,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnGrafica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGrafica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrafica.ForeColor = System.Drawing.Color.White;
-            this.btnGrafica.Location = new System.Drawing.Point(755, 427);
+            this.btnGrafica.Location = new System.Drawing.Point(761, 427);
             this.btnGrafica.Name = "btnGrafica";
             this.btnGrafica.Size = new System.Drawing.Size(75, 54);
             this.btnGrafica.TabIndex = 15;
