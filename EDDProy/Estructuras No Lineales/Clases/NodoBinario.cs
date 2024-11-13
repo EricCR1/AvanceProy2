@@ -21,8 +21,10 @@ namespace EDDemo.Estructuras_No_Lineales
             this.Izq = null;
             this.Der = null;
             this.Sig = null;
-            
+
             //CAMBIO HECHO EN CLASE
         }
+
+        public NodoBinario() { }
     }
 }

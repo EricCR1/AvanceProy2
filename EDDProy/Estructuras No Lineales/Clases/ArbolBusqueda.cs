@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales.Clases;
-using EDDemo.Estructuras_No_Lineales.Clases;
+
 
 namespace EDDemo.Estructuras_No_Lineales
 {
@@ -315,21 +315,21 @@ namespace EDDemo.Estructuras_No_Lineales
             if (nodo == null)
                 return;
 
-            ColaPersonalizada cola = new ColaPersonalizada();
-            cola.Enqueue(nodo);
+            Cola cola = new Cola();
+            cola.Queue(nodo);
 
             strRecorrido = ""; // Limpiamos la cadena antes de usarla
 
             while (!cola.IsEmpty())
             {
-                NodoBinario actual = cola.Dequeue();
+                NodoBinario actual = cola.DeQueue();
                 strRecorrido += actual.Dato + " - ";
 
                 if (actual.Izq != null)
-                    cola.Enqueue(actual.Izq);
+                    cola.Queue(actual.Izq);
 
                 if (actual.Der != null)
-                    cola.Enqueue(actual.Der);
+                    cola.Queue(actual.Der);
             }
         }
 
@@ -338,14 +338,14 @@ namespace EDDemo.Estructuras_No_Lineales
             if (nodo == null)
                 return true; // Un árbol vacío es completo
 
-            ColaPersonalizada colaAuxiliar = new ColaPersonalizada();
-            colaAuxiliar.Enqueue(nodo);
+            Cola colaAuxiliar = new Cola();
+            colaAuxiliar.Queue(nodo);
 
             bool nodoLleno = false; // Indica si hemos encontrado un nodo que no tiene hijos completos
 
             while (!colaAuxiliar.IsEmpty())
             {
-                NodoBinario nodoAuxiliar = colaAuxiliar.Dequeue();
+                NodoBinario nodoAuxiliar = colaAuxiliar.DeQueue();
 
                 // Revisamos el hijo izquierdo
                 if (nodoAuxiliar.Izq != null)
@@ -353,7 +353,7 @@ namespace EDDemo.Estructuras_No_Lineales
                     if (nodoLleno)
                         return false; // Si ya encontramos un nodo incompleto, no puede haber más nodos con hijos
 
-                    colaAuxiliar.Enqueue(nodoAuxiliar.Izq);
+                    colaAuxiliar.Queue(nodoAuxiliar.Izq);
                 }
                 else
                 {
@@ -366,7 +366,7 @@ namespace EDDemo.Estructuras_No_Lineales
                     if (nodoLleno)
                         return false; // Si ya encontramos un nodo incompleto, no puede haber más nodos con hijos
 
-                    colaAuxiliar.Enqueue(nodoAuxiliar.Der);
+                    colaAuxiliar.Queue(nodoAuxiliar.Der);
                 }
                 else
                 {
@@ -380,4 +380,3 @@ namespace EDDemo.Estructuras_No_Lineales
 
     }
 }
-

@@ -10,9 +10,9 @@ namespace EDDemo.Estructuras_Lineales.Clases
 {
     class Cola
     {
-        private Nodo Primero;
-        private Nodo Ultimo;
-       
+        private NodoBinario Primero;
+        private NodoBinario Ultimo;
+
         private ListBox listbox;
 
         public Cola(ListBox listbox)
@@ -22,22 +22,22 @@ namespace EDDemo.Estructuras_Lineales.Clases
             this.listbox = listbox;  // Asignamos el ListBox que nos pasen
         }
 
-        public void Queue(int DATO)
+        public Cola() { }
+        public void Queue(NodoBinario nodo)
         {
 
-            Nodo Nuevo = new Nodo();
-            Nuevo.Dato = DATO;
-            Nuevo.Sig = null;
+            if (nodo == null)
+                return;
 
             if (Ultimo == null)
             {
-                Ultimo = Nuevo;
-                Primero = Nuevo;
+                Primero = nodo;
+                Ultimo = nodo;
             }
             else
             {
-                Ultimo.Sig = Nuevo;
-                Ultimo = Nuevo;
+                Ultimo.Sig = nodo; // Usamos el campo 'Sig' para conectar los nodos
+                Ultimo = nodo;
             }
             Mostrar();
 
@@ -48,7 +48,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
             if (listbox != null)
             {
                 listbox.Items.Clear();  // Limpiamos el ListBox antes de agregar los elementos
-                Nodo Aux = Primero;
+                NodoBinario Aux = Primero;
                 while (Aux != null)
                 {
                     listbox.Items.Add("[" + Aux.Dato + "]");  // Añadir cada valor al ListBox
@@ -57,7 +57,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
             }
         }
 
-        public int? DeQueue()
+        public NodoBinario DeQueue()
         {
             if (Primero == null)
             {
@@ -66,9 +66,9 @@ namespace EDDemo.Estructuras_Lineales.Clases
             }
             else
             {
-                Nodo Aux = Primero;
+                NodoBinario Aux = Primero;
                 Primero = Primero.Sig;
-                int DATO = Aux.Dato;
+                NodoBinario DATO = Aux;
 
 
                 if (Primero == null)
@@ -85,7 +85,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         public void Recorrer(int datoBuscado)
         {
             int posicion = 0;
-            Nodo Aux = Primero;
+            NodoBinario Aux = Primero;
 
             // Recorremos la cola hasta que no haya más nodos
             while (Aux != null)
@@ -114,7 +114,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
                 return;
             }
 
-            Nodo Aux = Primero;
+            NodoBinario Aux = Primero;
             StringBuilder valores = new StringBuilder();
 
             while (Aux != null)
@@ -133,7 +133,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
             { return; }
             else
             {
-                Nodo Aux;
+                NodoBinario Aux;
                 while (Primero != null)
                 {
                     Aux = Primero;  // Guardamos el nodo en la parte superior
@@ -146,5 +146,12 @@ namespace EDDemo.Estructuras_Lineales.Clases
             }
             Mostrar();
         }
+
+        public bool IsEmpty()
+        {
+            return Primero == null;
+        }
     }
+
+
 }

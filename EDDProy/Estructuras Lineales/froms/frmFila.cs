@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales.Clases;
+using EDDemo.Estructuras_No_Lineales;
 
 namespace EDDemo.Estructuras_Lineales.froms
 {
@@ -52,7 +53,8 @@ namespace EDDemo.Estructuras_Lineales.froms
             // Validar que el texto ingresado sea un número
             if (int.TryParse(textBox1.Text, out DATO))
             {
-                cola.Queue(DATO);  // Añadir a la pila
+                NodoBinario nuevoNodo = new NodoBinario(DATO); // Crear nodo con el valor ingresado
+                cola.Queue(nuevoNodo);  // Encolar el nodo
             }
             textBox1.Text = "";
         }

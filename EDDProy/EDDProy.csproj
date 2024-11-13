@@ -81,7 +81,6 @@
       <DependentUpon>frmListasDobles.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
-    <Compile Include="Estructuras No Lineales\Clases\ColaPersonalizada.cs" />
     <Compile Include="Estructuras No Lineales\frmArboles.cs">
       <SubType>Form</SubType>
     </Compile>
