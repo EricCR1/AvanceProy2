@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales.froms;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Recursividad;
+using EDDemo.Recursividad.forms;
 
 namespace EDDemo
 {
@@ -92,6 +94,27 @@ namespace EDDemo
             frmListasCirculares frmListasCirculares = new frmListasCirculares();
             frmListasCirculares.MdiParent = this;   
             frmListasCirculares.Show();
+        }
+
+        private void factorialesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFactorial frmFactorial = new frmFactorial();
+            frmFactorial.MdiParent = this;
+            frmFactorial.Show();
+        }
+
+        private void exponencialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmExponencial frmexponencial = new frmExponencial ();
+            frmexponencial.MdiParent = this;
+            frmexponencial.Show();
+        }
+
+        private void sumaDeArregloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArreglo frmarreglo = new frmArreglo();
+            frmarreglo.MdiParent = this;
+            frmarreglo.Show();
         }
     }
 }
