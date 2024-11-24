@@ -9,9 +9,21 @@ namespace EDDemo
 {
     public class Nodo
     {
-        public int Dato;
-        public Nodo Sig;
+        private int dato;
+        private Nodo sig = null;
+        private Nodo ant = null;
+
+        public int Dato { get => dato; set => dato = value; }
+        public Nodo Sig { get => sig; set => sig = value; } // Cambiado a public
+        public Nodo Ant { get => ant; set => ant = value; } // Cambiado a public
+
+        public override string ToString()
+        {
+            return string.Format("[{0}]", dato);
+        }
     }
 
-
 }
+
+
+

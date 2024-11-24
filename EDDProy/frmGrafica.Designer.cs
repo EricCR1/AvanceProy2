@@ -37,7 +37,7 @@
             this.picGrafica.Location = new System.Drawing.Point(1, 2);
             this.picGrafica.Name = "picGrafica";
             this.picGrafica.Size = new System.Drawing.Size(931, 580);
-            this.picGrafica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGrafica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picGrafica.TabIndex = 0;
             this.picGrafica.TabStop = false;
             this.picGrafica.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -46,13 +46,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 612);
+            this.ClientSize = new System.Drawing.Size(1326, 749);
             this.Controls.Add(this.picGrafica);
             this.Name = "frmGrafica";
             this.Text = "frmGrafica";
             this.Load += new System.EventHandler(this.frmGrafica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picGrafica)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

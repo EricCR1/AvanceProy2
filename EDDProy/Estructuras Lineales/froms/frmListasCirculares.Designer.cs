@@ -56,6 +56,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Recorrer";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -69,6 +70,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Vaciar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button6
             // 
@@ -81,6 +83,7 @@
             this.button6.TabIndex = 16;
             this.button6.Text = "Buscar";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button1
             // 
@@ -93,6 +96,7 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "Insertar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -105,6 +109,7 @@
             this.button4.TabIndex = 23;
             this.button4.Text = "Eliminar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox1
             // 
@@ -195,7 +200,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(498, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(69, 550);
+            this.listBox1.Size = new System.Drawing.Size(59, 550);
             this.listBox1.TabIndex = 34;
             // 
             // frmListasCirculares
@@ -203,7 +208,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(564, 527);
+            this.ClientSize = new System.Drawing.Size(556, 527);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

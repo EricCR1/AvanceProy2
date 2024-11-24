@@ -79,12 +79,13 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "Vaciar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.LightCoral;
             this.textBox1.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(151, 252);
+            this.textBox1.Location = new System.Drawing.Point(164, 336);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(106, 53);
@@ -132,7 +133,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.LightCoral;
             this.textBox2.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(167, 341);
+            this.textBox2.Location = new System.Drawing.Point(295, 341);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(90, 53);
@@ -154,11 +155,12 @@
             // 
             this.textBox3.BackColor = System.Drawing.Color.LightCoral;
             this.textBox3.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(295, 346);
+            this.textBox3.Location = new System.Drawing.Point(151, 252);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(93, 53);
             this.textBox3.TabIndex = 19;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -182,6 +184,7 @@
             this.button4.TabIndex = 21;
             this.button4.Text = "Eliminar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // label4
             // 

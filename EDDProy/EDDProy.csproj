@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="Estructuras Lineales\Clases\Cola.cs" />
     <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListasCirculares.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListasDobles.cs" />
     <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
     <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
     <Compile Include="Estructuras Lineales\froms\frmFila.cs">
