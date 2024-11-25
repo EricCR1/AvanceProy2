@@ -128,5 +128,12 @@ namespace EDDemo
         {
 
         }
+
+        private void busquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaBinaria frmBusquedaBinaria = new frmBusquedaBinaria();
+            frmBusquedaBinaria.MdiParent = this;    
+            frmBusquedaBinaria.Show();
+        }
     }
 }
