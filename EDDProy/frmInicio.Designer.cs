@@ -32,6 +32,8 @@ namespace EDDemo
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.recursividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.factorialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exponencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sumaDeArregloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,8 +43,7 @@ namespace EDDemo
             this.ciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasNoLibealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exponencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sumaDeArregloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.secuenciaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,18 +67,34 @@ namespace EDDemo
             this.recursividadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.factorialesToolStripMenuItem,
             this.exponencialToolStripMenuItem,
-            this.sumaDeArregloToolStripMenuItem});
+            this.sumaDeArregloToolStripMenuItem,
+            this.secuenciaDeToolStripMenuItem});
             this.recursividadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recursividadToolStripMenuItem.Name = "recursividadToolStripMenuItem";
             this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(120, 25);
             this.recursividadToolStripMenuItem.Text = "Recursividad";
+            this.recursividadToolStripMenuItem.Click += new System.EventHandler(this.recursividadToolStripMenuItem_Click);
             // 
             // factorialesToolStripMenuItem
             // 
             this.factorialesToolStripMenuItem.Name = "factorialesToolStripMenuItem";
-            this.factorialesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.factorialesToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.factorialesToolStripMenuItem.Text = "Factoriales";
             this.factorialesToolStripMenuItem.Click += new System.EventHandler(this.factorialesToolStripMenuItem_Click);
+            // 
+            // exponencialToolStripMenuItem
+            // 
+            this.exponencialToolStripMenuItem.Name = "exponencialToolStripMenuItem";
+            this.exponencialToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.exponencialToolStripMenuItem.Text = "Exponencial";
+            this.exponencialToolStripMenuItem.Click += new System.EventHandler(this.exponencialToolStripMenuItem_Click);
+            // 
+            // sumaDeArregloToolStripMenuItem
+            // 
+            this.sumaDeArregloToolStripMenuItem.Name = "sumaDeArregloToolStripMenuItem";
+            this.sumaDeArregloToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.sumaDeArregloToolStripMenuItem.Text = "Suma de Arreglo";
+            this.sumaDeArregloToolStripMenuItem.Click += new System.EventHandler(this.sumaDeArregloToolStripMenuItem_Click);
             // 
             // estructurasLinealesToolStripMenuItem
             // 
@@ -154,19 +171,12 @@ namespace EDDemo
             this.arbolesToolStripMenuItem.Text = "Arboles";
             this.arbolesToolStripMenuItem.Click += new System.EventHandler(this.arbolesToolStripMenuItem_Click);
             // 
-            // exponencialToolStripMenuItem
+            // secuenciaDeToolStripMenuItem
             // 
-            this.exponencialToolStripMenuItem.Name = "exponencialToolStripMenuItem";
-            this.exponencialToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.exponencialToolStripMenuItem.Text = "Exponencial";
-            this.exponencialToolStripMenuItem.Click += new System.EventHandler(this.exponencialToolStripMenuItem_Click);
-            // 
-            // sumaDeArregloToolStripMenuItem
-            // 
-            this.sumaDeArregloToolStripMenuItem.Name = "sumaDeArregloToolStripMenuItem";
-            this.sumaDeArregloToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
-            this.sumaDeArregloToolStripMenuItem.Text = "Suma de Arreglo";
-            this.sumaDeArregloToolStripMenuItem.Click += new System.EventHandler(this.sumaDeArregloToolStripMenuItem_Click);
+            this.secuenciaDeToolStripMenuItem.Name = "secuenciaDeToolStripMenuItem";
+            this.secuenciaDeToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.secuenciaDeToolStripMenuItem.Text = "Secuencia de Fibonacci";
+            this.secuenciaDeToolStripMenuItem.Click += new System.EventHandler(this.secuenciaDeToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -202,6 +212,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem factorialesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exponencialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sumaDeArregloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem secuenciaDeToolStripMenuItem;
     }
 }
 

@@ -116,5 +116,17 @@ namespace EDDemo
             frmarreglo.MdiParent = this;
             frmarreglo.Show();
         }
+
+        private void secuenciaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFibonacci Frmfibonacci = new frmFibonacci();
+            Frmfibonacci.MdiParent = this;
+            Frmfibonacci.Show();
+        }
+
+        private void recursividadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
