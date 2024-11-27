@@ -35,6 +35,7 @@ namespace EDDemo
             this.exponencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sumaDeArregloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.secuenciaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.busquedaBinariaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,7 @@ namespace EDDemo
             this.ciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasNoLibealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.busquedaBinariaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.torresDeHannoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +71,8 @@ namespace EDDemo
             this.exponencialToolStripMenuItem,
             this.sumaDeArregloToolStripMenuItem,
             this.secuenciaDeToolStripMenuItem,
-            this.busquedaBinariaToolStripMenuItem});
+            this.busquedaBinariaToolStripMenuItem,
+            this.torresDeHannoiToolStripMenuItem});
             this.recursividadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recursividadToolStripMenuItem.Name = "recursividadToolStripMenuItem";
             this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(120, 25);
@@ -104,6 +106,13 @@ namespace EDDemo
             this.secuenciaDeToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
             this.secuenciaDeToolStripMenuItem.Text = "Secuencia de Fibonacci";
             this.secuenciaDeToolStripMenuItem.Click += new System.EventHandler(this.secuenciaDeToolStripMenuItem_Click);
+            // 
+            // busquedaBinariaToolStripMenuItem
+            // 
+            this.busquedaBinariaToolStripMenuItem.Name = "busquedaBinariaToolStripMenuItem";
+            this.busquedaBinariaToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.busquedaBinariaToolStripMenuItem.Text = "Busqueda Binaria";
+            this.busquedaBinariaToolStripMenuItem.Click += new System.EventHandler(this.busquedaBinariaToolStripMenuItem_Click);
             // 
             // estructurasLinealesToolStripMenuItem
             // 
@@ -180,12 +189,11 @@ namespace EDDemo
             this.arbolesToolStripMenuItem.Text = "Arboles";
             this.arbolesToolStripMenuItem.Click += new System.EventHandler(this.arbolesToolStripMenuItem_Click);
             // 
-            // busquedaBinariaToolStripMenuItem
+            // torresDeHannoiToolStripMenuItem
             // 
-            this.busquedaBinariaToolStripMenuItem.Name = "busquedaBinariaToolStripMenuItem";
-            this.busquedaBinariaToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
-            this.busquedaBinariaToolStripMenuItem.Text = "Busqueda Binaria";
-            this.busquedaBinariaToolStripMenuItem.Click += new System.EventHandler(this.busquedaBinariaToolStripMenuItem_Click);
+            this.torresDeHannoiToolStripMenuItem.Name = "torresDeHannoiToolStripMenuItem";
+            this.torresDeHannoiToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.torresDeHannoiToolStripMenuItem.Text = "Torres de Hannoi";
             // 
             // frmInicio
             // 
@@ -223,6 +231,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem sumaDeArregloToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem secuenciaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem busquedaBinariaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem torresDeHannoiToolStripMenuItem;
     }
 }
 

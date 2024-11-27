@@ -116,6 +116,7 @@
     <Compile Include="Recursividad\Clases\Factorial.cs" />
     <Compile Include="Recursividad\Clases\Fibonacci.cs" />
     <Compile Include="Recursividad\Clases\SumarArreglos.cs" />
+    <Compile Include="Recursividad\Clases\TorresHannoi.cs" />
     <Compile Include="Recursividad\forms\frmArreglo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +146,12 @@
     </Compile>
     <Compile Include="Recursividad\forms\frmFibonacci.Designer.cs">
       <DependentUpon>frmFibonacci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\forms\frmTorresHannoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\forms\frmTorresHannoi.Designer.cs">
+      <DependentUpon>frmTorresHannoi.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Estructuras Lineales\froms\frmFila.resx">
       <DependentUpon>frmFila.cs</DependentUpon>
@@ -193,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Recursividad\forms\frmFibonacci.resx">
       <DependentUpon>frmFibonacci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\forms\frmTorresHannoi.resx">
+      <DependentUpon>frmTorresHannoi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="external\config6" />
     <None Include="external\gvmap.sh" />
