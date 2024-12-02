@@ -90,7 +90,7 @@ namespace EDDemo.Recursividad.forms
                 // Mostrar los resultados
                 if (posicion != -1)
                 {
-                    MessageBox.Show("Número encontrado en posición: " +  posicion+1);
+                    MessageBox.Show("Número encontrado en posición: " +  posicion + " (como arreglo)");
                 }
                 else
                 {

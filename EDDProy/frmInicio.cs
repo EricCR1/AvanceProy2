@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales.froms;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Metodos_De_Ordenamiento.Forms;
 using EDDemo.Recursividad;
 using EDDemo.Recursividad.forms;
 
@@ -134,6 +135,30 @@ namespace EDDemo
             frmBusquedaBinaria frmBusquedaBinaria = new frmBusquedaBinaria();
             frmBusquedaBinaria.MdiParent = this;    
             frmBusquedaBinaria.Show();
+        }
+
+        private void torresDeHannoiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTorresHannoi frmTorresHannoi = new frmTorresHannoi();
+            frmTorresHannoi.MdiParent = this;
+            frmTorresHannoi.Show(); 
+        }
+
+        private void métodoDeOrdenaminetoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void burbujaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void burbujaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmBurbuja frmburbuja = new frmBurbuja();
+            frmburbuja.MdiParent = this;
+            frmburbuja.Show();
         }
     }
 }
