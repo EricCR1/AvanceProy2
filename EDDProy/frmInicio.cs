@@ -167,5 +167,12 @@ namespace EDDemo
             FrmQuickSort.MdiParent = this;
             FrmQuickSort.Show();
         }
+
+        private void shellSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShellSort FrmShellSort = new frmShellSort();
+            FrmShellSort.MdiParent = this;
+            FrmShellSort.Show();
+        }
     }
 }

@@ -50,6 +50,7 @@ namespace EDDemo
             this.burbujaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.burbujaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shellSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -215,7 +216,8 @@ namespace EDDemo
             // 
             this.burbujaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.burbujaToolStripMenuItem1,
-            this.quickSortToolStripMenuItem});
+            this.quickSortToolStripMenuItem,
+            this.shellSortToolStripMenuItem});
             this.burbujaToolStripMenuItem.Name = "burbujaToolStripMenuItem";
             this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.burbujaToolStripMenuItem.Text = "Interno";
@@ -234,6 +236,13 @@ namespace EDDemo
             this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.quickSortToolStripMenuItem.Text = "QuickSort";
             this.quickSortToolStripMenuItem.Click += new System.EventHandler(this.quickSortToolStripMenuItem_Click);
+            // 
+            // shellSortToolStripMenuItem
+            // 
+            this.shellSortToolStripMenuItem.Name = "shellSortToolStripMenuItem";
+            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.shellSortToolStripMenuItem.Text = "ShellSort";
+            this.shellSortToolStripMenuItem.Click += new System.EventHandler(this.shellSortToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -276,6 +285,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem burbujaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem burbujaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem quickSortToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shellSortToolStripMenuItem;
     }
 }
 
