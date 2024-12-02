@@ -160,5 +160,12 @@ namespace EDDemo
             frmburbuja.MdiParent = this;
             frmburbuja.Show();
         }
+
+        private void quickSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuickSort FrmQuickSort = new frmQuickSort();
+            FrmQuickSort.MdiParent = this;
+            FrmQuickSort.Show();
+        }
     }
 }

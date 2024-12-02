@@ -49,6 +49,7 @@ namespace EDDemo
             this.métodoDeOrdenaminetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.burbujaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.burbujaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,14 +190,14 @@ namespace EDDemo
             this.arbolesToolStripMenuItem});
             this.estructurasNoLibealesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estructurasNoLibealesToolStripMenuItem.Name = "estructurasNoLibealesToolStripMenuItem";
-            this.estructurasNoLibealesToolStripMenuItem.Size = new System.Drawing.Size(122, 25);
+            this.estructurasNoLibealesToolStripMenuItem.Size = new System.Drawing.Size(193, 25);
             this.estructurasNoLibealesToolStripMenuItem.Text = "Estructuras no lineales";
             this.estructurasNoLibealesToolStripMenuItem.Click += new System.EventHandler(this.estructurasNoLibealesToolStripMenuItem_Click);
             // 
             // arbolesToolStripMenuItem
             // 
             this.arbolesToolStripMenuItem.Name = "arbolesToolStripMenuItem";
-            this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
             this.arbolesToolStripMenuItem.Text = "Arboles";
             this.arbolesToolStripMenuItem.Click += new System.EventHandler(this.arbolesToolStripMenuItem_Click);
             // 
@@ -213,7 +214,8 @@ namespace EDDemo
             // burbujaToolStripMenuItem
             // 
             this.burbujaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.burbujaToolStripMenuItem1});
+            this.burbujaToolStripMenuItem1,
+            this.quickSortToolStripMenuItem});
             this.burbujaToolStripMenuItem.Name = "burbujaToolStripMenuItem";
             this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.burbujaToolStripMenuItem.Text = "Interno";
@@ -225,6 +227,13 @@ namespace EDDemo
             this.burbujaToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
             this.burbujaToolStripMenuItem1.Text = "Burbuja";
             this.burbujaToolStripMenuItem1.Click += new System.EventHandler(this.burbujaToolStripMenuItem1_Click);
+            // 
+            // quickSortToolStripMenuItem
+            // 
+            this.quickSortToolStripMenuItem.Name = "quickSortToolStripMenuItem";
+            this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.quickSortToolStripMenuItem.Text = "QuickSort";
+            this.quickSortToolStripMenuItem.Click += new System.EventHandler(this.quickSortToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -266,6 +275,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem métodoDeOrdenaminetoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem burbujaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem burbujaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem quickSortToolStripMenuItem;
     }
 }
 

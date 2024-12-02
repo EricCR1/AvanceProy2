@@ -110,11 +110,18 @@
     </Compile>
     <Compile Include="Graphviz.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\Burbuja.cs" />
+    <Compile Include="Metodos De Ordenamiento\Clases\QuickSort.cs" />
     <Compile Include="Metodos De Ordenamiento\Forms\frmBurbuja.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Metodos De Ordenamiento\Forms\frmBurbuja.Designer.cs">
       <DependentUpon>frmBurbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos De Ordenamiento\Forms\frmQuickSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos De Ordenamiento\Forms\frmQuickSort.Designer.cs">
+      <DependentUpon>frmQuickSort.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -192,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmBurbuja.resx">
       <DependentUpon>frmBurbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmQuickSort.resx">
+      <DependentUpon>frmQuickSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
