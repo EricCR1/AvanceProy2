@@ -110,8 +110,16 @@
     </Compile>
     <Compile Include="Graphviz.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\Burbuja.cs" />
+    <Compile Include="Metodos De Ordenamiento\Clases\Intercalacion.cs" />
+    <Compile Include="Metodos De Ordenamiento\Clases\Radix.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\QuickSort.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\ShellSort.cs" />
+    <Compile Include="Metodos De Ordenamiento\Forms\frmIntercalacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos De Ordenamiento\Forms\frmIntercalacion.Designer.cs">
+      <DependentUpon>frmIntercalacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Metodos De Ordenamiento\Forms\frmBurbuja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +131,12 @@
     </Compile>
     <Compile Include="Metodos De Ordenamiento\Forms\frmQuickSort.Designer.cs">
       <DependentUpon>frmQuickSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos De Ordenamiento\Forms\frmRadix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos De Ordenamiento\Forms\frmRadix.Designer.cs">
+      <DependentUpon>frmRadix.cs</DependentUpon>
     </Compile>
     <Compile Include="Metodos De Ordenamiento\Forms\frmShellSort.cs">
       <SubType>Form</SubType>
@@ -207,8 +221,14 @@
     <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmBurbuja.resx">
       <DependentUpon>frmBurbuja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmIntercalacion.resx">
+      <DependentUpon>frmIntercalacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmQuickSort.resx">
       <DependentUpon>frmQuickSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmRadix.resx">
+      <DependentUpon>frmRadix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmShellSort.resx">
       <DependentUpon>frmShellSort.cs</DependentUpon>

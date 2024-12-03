@@ -51,6 +51,9 @@ namespace EDDemo
             this.burbujaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shellSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.radixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.externoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.intercalaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +68,7 @@ namespace EDDemo
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(774, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(1301, 27);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -205,7 +208,8 @@ namespace EDDemo
             // métodoDeOrdenaminetoToolStripMenuItem
             // 
             this.métodoDeOrdenaminetoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.burbujaToolStripMenuItem});
+            this.burbujaToolStripMenuItem,
+            this.externoToolStripMenuItem});
             this.métodoDeOrdenaminetoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.métodoDeOrdenaminetoToolStripMenuItem.Name = "métodoDeOrdenaminetoToolStripMenuItem";
             this.métodoDeOrdenaminetoToolStripMenuItem.Size = new System.Drawing.Size(227, 25);
@@ -217,7 +221,8 @@ namespace EDDemo
             this.burbujaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.burbujaToolStripMenuItem1,
             this.quickSortToolStripMenuItem,
-            this.shellSortToolStripMenuItem});
+            this.shellSortToolStripMenuItem,
+            this.radixToolStripMenuItem});
             this.burbujaToolStripMenuItem.Name = "burbujaToolStripMenuItem";
             this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.burbujaToolStripMenuItem.Text = "Interno";
@@ -244,11 +249,33 @@ namespace EDDemo
             this.shellSortToolStripMenuItem.Text = "ShellSort";
             this.shellSortToolStripMenuItem.Click += new System.EventHandler(this.shellSortToolStripMenuItem_Click);
             // 
+            // radixToolStripMenuItem
+            // 
+            this.radixToolStripMenuItem.Name = "radixToolStripMenuItem";
+            this.radixToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.radixToolStripMenuItem.Text = "Radix";
+            this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
+            // 
+            // externoToolStripMenuItem
+            // 
+            this.externoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.intercalaciónToolStripMenuItem});
+            this.externoToolStripMenuItem.Name = "externoToolStripMenuItem";
+            this.externoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.externoToolStripMenuItem.Text = "Externo";
+            // 
+            // intercalaciónToolStripMenuItem
+            // 
+            this.intercalaciónToolStripMenuItem.Name = "intercalaciónToolStripMenuItem";
+            this.intercalaciónToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.intercalaciónToolStripMenuItem.Text = "Intercalación";
+            this.intercalaciónToolStripMenuItem.Click += new System.EventHandler(this.intercalaciónToolStripMenuItem_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 478);
+            this.ClientSize = new System.Drawing.Size(1301, 698);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -286,6 +313,9 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem burbujaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem quickSortToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem shellSortToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem radixToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem externoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem intercalaciónToolStripMenuItem;
     }
 }
 

@@ -1,6 +1,6 @@
 ﻿namespace EDDemo.Metodos_De_Ordenamiento.Forms
 {
-    partial class frmShellSort
+    partial class frmRadix
     {
         /// <summary>
         /// Required designer variable.
@@ -45,28 +45,27 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 46);
+            this.label1.Location = new System.Drawing.Point(56, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 20);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 6;
             this.label1.Text = "Cantidad de Elementos";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(40, 69);
+            this.numericUpDown1.Location = new System.Drawing.Point(60, 80);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(61, 47);
-            this.numericUpDown1.TabIndex = 6;
+            this.numericUpDown1.TabIndex = 7;
             // 
             // btnCrear
             // 
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrear.Location = new System.Drawing.Point(120, 69);
+            this.btnCrear.Location = new System.Drawing.Point(140, 80);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(91, 47);
-            this.btnCrear.TabIndex = 7;
+            this.btnCrear.TabIndex = 8;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
@@ -76,19 +75,19 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 155);
+            this.label2.Location = new System.Drawing.Point(54, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(220, 33);
-            this.label2.TabIndex = 8;
+            this.label2.TabIndex = 9;
             this.label2.Text = "[ELEMENTOS]";
             // 
             // btnOrdenar
             // 
             this.btnOrdenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrdenar.Location = new System.Drawing.Point(319, 201);
+            this.btnOrdenar.Location = new System.Drawing.Point(95, 201);
             this.btnOrdenar.Name = "btnOrdenar";
             this.btnOrdenar.Size = new System.Drawing.Size(75, 23);
-            this.btnOrdenar.TabIndex = 9;
+            this.btnOrdenar.TabIndex = 10;
             this.btnOrdenar.Text = "Ordenar";
             this.btnOrdenar.UseVisualStyleBackColor = true;
             this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
@@ -98,10 +97,10 @@
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(82, 230);
+            this.panel1.Location = new System.Drawing.Point(95, 230);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(643, 174);
-            this.panel1.TabIndex = 10;
+            this.panel1.TabIndex = 11;
             // 
             // label3
             // 
@@ -121,17 +120,17 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(36, 417);
+            this.label4.Location = new System.Drawing.Point(12, 417);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 24);
-            this.label4.TabIndex = 11;
+            this.label4.TabIndex = 12;
             this.label4.Text = ".....";
             // 
-            // frmShellSort
+            // frmRadix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.BackColor = System.Drawing.Color.SaddleBrown;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -140,9 +139,9 @@
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label1);
-            this.Name = "frmShellSort";
-            this.Text = "frmShellSort";
-            this.Load += new System.EventHandler(this.frmShellSort_Load);
+            this.Name = "frmRadix";
+            this.Text = "frmRadix";
+            this.Load += new System.EventHandler(this.frmRadix_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -174,5 +174,19 @@ namespace EDDemo
             FrmShellSort.MdiParent = this;
             FrmShellSort.Show();
         }
+
+        private void radixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRadix frmRadix = new frmRadix();
+            frmRadix.MdiParent = this;
+            frmRadix.Show();
+        }
+
+        private void intercalaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntercalacion frmIntercalacion = new frmIntercalacion();
+            frmIntercalacion.MdiParent = this;
+            frmIntercalacion.Show();
+        }
     }
 }

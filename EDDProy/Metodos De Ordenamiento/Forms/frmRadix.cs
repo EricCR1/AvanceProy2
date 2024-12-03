@@ -11,32 +11,32 @@ using EDDemo.Metodos_De_Ordenamiento.Clases;
 
 namespace EDDemo.Metodos_De_Ordenamiento.Forms
 {
-    public partial class frmShellSort : Form
+    public partial class frmRadix : Form
     {
         private int[] arreglo;
-        public frmShellSort()
+        public frmRadix()
         {
             InitializeComponent();
         }
 
-        private void frmShellSort_Load(object sender, EventArgs e)
+        private void frmRadix_Load(object sender, EventArgs e)
         {
 
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            // Crear arreglo aleatorio
+            // Crear un arreglo aleatorio
             int cantidad = (int)numericUpDown1.Value;
             Random random = new Random();
             arreglo = new int[cantidad];
 
             for (int i = 0; i < cantidad; i++)
             {
-                arreglo[i] = random.Next(1, 100); // Números entre 1 y 100
+                arreglo[i] = random.Next(1, 1000); // Números entre 1 y 999
             }
 
-            label2.Text = $"Arreglo inicial: {string.Join(", ", arreglo)}"; // Mostrar en el Label
+            label2.Text = $"{string.Join(", ", arreglo)}"; // Mostrar en el Label
         }
 
         private void btnOrdenar_Click(object sender, EventArgs e)
@@ -47,26 +47,23 @@ namespace EDDemo.Metodos_De_Ordenamiento.Forms
                 return;
             }
 
-            // Crear instancia de ShellSort y ordenar
-            ShellSort shellSort = new ShellSort();
-            shellSort.Ordenar(arreglo);
+            // Crear instancia de Radix y ordenar
+            Radix radix = new Radix();
+            radix.Ordenar(arreglo);
 
             // Limpiar el Label de pasos previos
             label3.Text = "";
 
             // Mostrar los pasos intermedios en el Label
-            foreach (var paso in shellSort.Pasos)
+            foreach (var paso in radix.Pasos)
             {
                 label3.Text += paso + "\n";
+                label4.Text = "";
+                label4.Text += $"Arreglo ordenado: " + paso + "\n";
             }
 
             // Mostrar el arreglo final en otro Label
-            label4.Text = $"Arreglo ordenado: {string.Join(", ", arreglo)}";
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+           
         }
     }
 }
