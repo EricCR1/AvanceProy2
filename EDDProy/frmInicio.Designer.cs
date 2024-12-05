@@ -231,7 +231,7 @@ namespace EDDemo
             this.shellSortToolStripMenuItem,
             this.radixToolStripMenuItem});
             this.burbujaToolStripMenuItem.Name = "burbujaToolStripMenuItem";
-            this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
             this.burbujaToolStripMenuItem.Text = "Interno";
             this.burbujaToolStripMenuItem.Click += new System.EventHandler(this.burbujaToolStripMenuItem_Click);
             // 
@@ -270,7 +270,7 @@ namespace EDDemo
             this.mezclaDirectaToolStripMenuItem,
             this.mezclaNaturalToolStripMenuItem});
             this.externoToolStripMenuItem.Name = "externoToolStripMenuItem";
-            this.externoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.externoToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
             this.externoToolStripMenuItem.Text = "Externo";
             // 
             // intercalaciónToolStripMenuItem
@@ -310,6 +310,7 @@ namespace EDDemo
             this.secuencialToolStripMenuItem.Name = "secuencialToolStripMenuItem";
             this.secuencialToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.secuencialToolStripMenuItem.Text = "Secuencial";
+            this.secuencialToolStripMenuItem.Click += new System.EventHandler(this.secuencialToolStripMenuItem_Click);
             // 
             // binarioToolStripMenuItem
             // 

@@ -210,5 +210,12 @@ namespace EDDemo
             FrmHash.MdiParent = this;
             FrmHash.Show();
         }
+
+        private void secuencialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSecuencial FrmSecuencial = new frmSecuencial();
+            FrmSecuencial.MdiParent = this;
+            FrmSecuencial.Show();
+        }
     }
 }
