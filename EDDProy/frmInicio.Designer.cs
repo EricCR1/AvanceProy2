@@ -317,6 +317,7 @@ namespace EDDemo
             this.binarioToolStripMenuItem.Name = "binarioToolStripMenuItem";
             this.binarioToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.binarioToolStripMenuItem.Text = "Binario";
+            this.binarioToolStripMenuItem.Click += new System.EventHandler(this.binarioToolStripMenuItem_Click);
             // 
             // hASHToolStripMenuItem
             // 

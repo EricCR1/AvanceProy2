@@ -217,5 +217,12 @@ namespace EDDemo
             FrmSecuencial.MdiParent = this;
             FrmSecuencial.Show();
         }
+
+        private void binarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBinario frmBinario = new frmBinario();
+            frmBinario.MdiParent = this;
+            frmBinario.Show();
+        }
     }
 }

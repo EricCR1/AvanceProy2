@@ -109,7 +109,14 @@
       <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Metodos de Busqueda\Clases\Binaria.cs" />
     <Compile Include="Metodos de Busqueda\Clases\Secuencial.cs" />
+    <Compile Include="Metodos de Busqueda\Forms\frmBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda\Forms\frmBinario.Designer.cs">
+      <DependentUpon>frmBinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Metodos de Busqueda\Forms\frmHash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\froms\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda\Forms\frmBinario.resx">
+      <DependentUpon>frmBinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos de Busqueda\Forms\frmHash.resx">
       <DependentUpon>frmHash.cs</DependentUpon>
