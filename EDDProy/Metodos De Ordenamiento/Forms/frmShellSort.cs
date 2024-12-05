@@ -36,7 +36,7 @@ namespace EDDemo.Metodos_De_Ordenamiento.Forms
                 arreglo[i] = random.Next(1, 100); // Números entre 1 y 100
             }
 
-            label2.Text = $"Arreglo inicial: {string.Join(", ", arreglo)}"; // Mostrar en el Label
+            label2.Text = $" {string.Join(", ", arreglo)}"; // Mostrar en el Label
         }
 
         private void btnOrdenar_Click(object sender, EventArgs e)
@@ -47,20 +47,20 @@ namespace EDDemo.Metodos_De_Ordenamiento.Forms
                 return;
             }
 
-            // Crear instancia de ShellSort y ordenar
+            
             ShellSort shellSort = new ShellSort();
             shellSort.Ordenar(arreglo);
 
-            // Limpiar el Label de pasos previos
+            
             label3.Text = "";
 
-            // Mostrar los pasos intermedios en el Label
+            
             foreach (var paso in shellSort.Pasos)
             {
                 label3.Text += paso + "\n";
             }
 
-            // Mostrar el arreglo final en otro Label
+            
             label4.Text = $"Arreglo ordenado: {string.Join(", ", arreglo)}";
         }
 

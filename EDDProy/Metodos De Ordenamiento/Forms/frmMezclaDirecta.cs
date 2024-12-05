@@ -38,7 +38,7 @@ namespace EDDemo.Metodos_De_Ordenamiento.Forms
             }
 
             // Mostrar el arreglo original
-            label2.Text = $"Arreglo original: {string.Join(", ", arreglo)}";
+            label2.Text = $" {string.Join(", ", arreglo)}";
         }
 
         private void btnOrdenar_Click(object sender, EventArgs e)

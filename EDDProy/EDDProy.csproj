@@ -109,6 +109,13 @@
       <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Metodos de Busqueda\Forms\frmHash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda\Forms\frmHash.Designer.cs">
+      <DependentUpon>frmHash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Busqueda\Hash.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\Burbuja.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\Intercalacion.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\MezclaDirecta.cs" />
@@ -231,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\froms\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda\Forms\frmHash.resx">
+      <DependentUpon>frmHash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmBurbuja.resx">
       <DependentUpon>frmBurbuja.cs</DependentUpon>
@@ -396,6 +406,7 @@
     <Content Include="external\vcruntime140_1.dll" />
     <Content Include="external\xdot.dll" />
     <Content Include="external\zlib1.dll" />
+    <None Include="Resources\fut.png" />
     <None Include="Resources\Hannoi1.png" />
     <None Include="Resources\Hannoi.png" />
   </ItemGroup>

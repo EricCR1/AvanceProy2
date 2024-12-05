@@ -84,7 +84,7 @@
             // btnOrdenar
             // 
             this.btnOrdenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrdenar.Location = new System.Drawing.Point(35, 260);
+            this.btnOrdenar.Location = new System.Drawing.Point(35, 206);
             this.btnOrdenar.Name = "btnOrdenar";
             this.btnOrdenar.Size = new System.Drawing.Size(75, 23);
             this.btnOrdenar.TabIndex = 16;
@@ -97,7 +97,7 @@
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(35, 298);
+            this.panel1.Location = new System.Drawing.Point(35, 235);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(803, 253);
             this.panel1.TabIndex = 17;
@@ -120,7 +120,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(31, 569);
+            this.label5.Location = new System.Drawing.Point(31, 509);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 24);
             this.label5.TabIndex = 18;
@@ -131,7 +131,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(891, 615);
+            this.ClientSize = new System.Drawing.Size(891, 561);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnOrdenar);

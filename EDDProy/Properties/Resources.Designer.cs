@@ -63,6 +63,16 @@ namespace EDDemo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fut {
+            get {
+                object obj = ResourceManager.GetObject("fut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hannoi {
             get {
                 object obj = ResourceManager.GetObject("Hannoi", resourceCulture);

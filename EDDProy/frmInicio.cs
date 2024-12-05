@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales.froms;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Metodos_de_Busqueda.Forms;
 using EDDemo.Metodos_De_Ordenamiento.Forms;
 using EDDemo.Recursividad;
 using EDDemo.Recursividad.forms;
@@ -201,6 +202,13 @@ namespace EDDemo
             frmMezclaNatural frmMezclaNatural = new frmMezclaNatural();
             frmMezclaNatural.MdiParent = this;
             frmMezclaNatural.Show();
+        }
+
+        private void hASHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHash FrmHash = new frmHash();
+            FrmHash.MdiParent = this;
+            FrmHash.Show();
         }
     }
 }
