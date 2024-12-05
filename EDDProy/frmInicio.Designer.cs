@@ -54,6 +54,8 @@ namespace EDDemo
             this.radixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.externoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.intercalaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mezclaDirectaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mezclaNaturalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,35 +233,37 @@ namespace EDDemo
             // burbujaToolStripMenuItem1
             // 
             this.burbujaToolStripMenuItem1.Name = "burbujaToolStripMenuItem1";
-            this.burbujaToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.burbujaToolStripMenuItem1.Size = new System.Drawing.Size(155, 26);
             this.burbujaToolStripMenuItem1.Text = "Burbuja";
             this.burbujaToolStripMenuItem1.Click += new System.EventHandler(this.burbujaToolStripMenuItem1_Click);
             // 
             // quickSortToolStripMenuItem
             // 
             this.quickSortToolStripMenuItem.Name = "quickSortToolStripMenuItem";
-            this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.quickSortToolStripMenuItem.Text = "QuickSort";
             this.quickSortToolStripMenuItem.Click += new System.EventHandler(this.quickSortToolStripMenuItem_Click);
             // 
             // shellSortToolStripMenuItem
             // 
             this.shellSortToolStripMenuItem.Name = "shellSortToolStripMenuItem";
-            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.shellSortToolStripMenuItem.Text = "ShellSort";
             this.shellSortToolStripMenuItem.Click += new System.EventHandler(this.shellSortToolStripMenuItem_Click);
             // 
             // radixToolStripMenuItem
             // 
             this.radixToolStripMenuItem.Name = "radixToolStripMenuItem";
-            this.radixToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.radixToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.radixToolStripMenuItem.Text = "Radix";
             this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
             // 
             // externoToolStripMenuItem
             // 
             this.externoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.intercalaciónToolStripMenuItem});
+            this.intercalaciónToolStripMenuItem,
+            this.mezclaDirectaToolStripMenuItem,
+            this.mezclaNaturalToolStripMenuItem});
             this.externoToolStripMenuItem.Name = "externoToolStripMenuItem";
             this.externoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.externoToolStripMenuItem.Text = "Externo";
@@ -267,9 +271,23 @@ namespace EDDemo
             // intercalaciónToolStripMenuItem
             // 
             this.intercalaciónToolStripMenuItem.Name = "intercalaciónToolStripMenuItem";
-            this.intercalaciónToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.intercalaciónToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
             this.intercalaciónToolStripMenuItem.Text = "Intercalación";
             this.intercalaciónToolStripMenuItem.Click += new System.EventHandler(this.intercalaciónToolStripMenuItem_Click);
+            // 
+            // mezclaDirectaToolStripMenuItem
+            // 
+            this.mezclaDirectaToolStripMenuItem.Name = "mezclaDirectaToolStripMenuItem";
+            this.mezclaDirectaToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.mezclaDirectaToolStripMenuItem.Text = "Mezcla Directa";
+            this.mezclaDirectaToolStripMenuItem.Click += new System.EventHandler(this.mezclaDirectaToolStripMenuItem_Click);
+            // 
+            // mezclaNaturalToolStripMenuItem
+            // 
+            this.mezclaNaturalToolStripMenuItem.Name = "mezclaNaturalToolStripMenuItem";
+            this.mezclaNaturalToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
+            this.mezclaNaturalToolStripMenuItem.Text = "Mezcla Natural";
+            this.mezclaNaturalToolStripMenuItem.Click += new System.EventHandler(this.mezclaNaturalToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -316,6 +334,8 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem radixToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem externoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem intercalaciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mezclaDirectaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mezclaNaturalToolStripMenuItem;
     }
 }
 

@@ -111,6 +111,8 @@
     <Compile Include="Graphviz.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\Burbuja.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\Intercalacion.cs" />
+    <Compile Include="Metodos De Ordenamiento\Clases\MezclaDirecta.cs" />
+    <Compile Include="Metodos De Ordenamiento\Clases\MezclaNatural.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\Radix.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\QuickSort.cs" />
     <Compile Include="Metodos De Ordenamiento\Clases\ShellSort.cs" />
@@ -125,6 +127,18 @@
     </Compile>
     <Compile Include="Metodos De Ordenamiento\Forms\frmBurbuja.Designer.cs">
       <DependentUpon>frmBurbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos De Ordenamiento\Forms\frmMezclaDirecta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos De Ordenamiento\Forms\frmMezclaDirecta.Designer.cs">
+      <DependentUpon>frmMezclaDirecta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos De Ordenamiento\Forms\frmMezclaNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos De Ordenamiento\Forms\frmMezclaNatural.Designer.cs">
+      <DependentUpon>frmMezclaNatural.cs</DependentUpon>
     </Compile>
     <Compile Include="Metodos De Ordenamiento\Forms\frmQuickSort.cs">
       <SubType>Form</SubType>
@@ -223,6 +237,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmIntercalacion.resx">
       <DependentUpon>frmIntercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmMezclaDirecta.resx">
+      <DependentUpon>frmMezclaDirecta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmMezclaNatural.resx">
+      <DependentUpon>frmMezclaNatural.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos De Ordenamiento\Forms\frmQuickSort.resx">
       <DependentUpon>frmQuickSort.cs</DependentUpon>

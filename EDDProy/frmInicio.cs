@@ -188,5 +188,19 @@ namespace EDDemo
             frmIntercalacion.MdiParent = this;
             frmIntercalacion.Show();
         }
+
+        private void mezclaDirectaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMezclaDirecta frmMezclaDirecta = new frmMezclaDirecta();
+            frmMezclaDirecta.MdiParent = this;
+            frmMezclaDirecta.Show();
+        }
+
+        private void mezclaNaturalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMezclaNatural frmMezclaNatural = new frmMezclaNatural();
+            frmMezclaNatural.MdiParent = this;
+            frmMezclaNatural.Show();
+        }
     }
 }
